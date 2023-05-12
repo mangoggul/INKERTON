@@ -5,8 +5,8 @@
 </head>
 <body>
 
-<header>부스와 사랑을 찾아드립니다!</header>
-<center><img src="../game.png" alt="" width="30%" height="30%" class = "img2"></center>
+<center><header>부스와 사랑을 찾아드립니다!</header></center>
+<center><img src="../image/game.png" alt="" width="30%" height="30%" class = "img2"></center>
 <div class = "background">
   <div class="question">
     <h2>1. 나는 승부욕이 있다.</h2>
@@ -57,7 +57,7 @@
 
 
 
-<button onclick="calculate()">결과 보기</button>
+<center><button onclick="calculate()">결과 보기</button></center>
 
 <div id="result" class="result">
   <button onclick="move()">btn</button>
@@ -85,14 +85,14 @@
   
       var result = document.getElementById('result');
       if (score >= 11 && score <= 15) {
-        result.innerHTML = '<div>보드게임 !!<a href="./real2.html"><button>다음 페이지로!!</button></a></div>';
+        result.innerHTML = '<div>보드게임 종류를 좋아하시는군요!! 오늘 야자 쨀 사람, 경경 보드카페, 예체대를 아름답게, 아름으로 가시오!      <a href="./real2.html"><button>    다음 페이지로!!</button></a></div>';
       } else if (score >= 16  && score <= 20) {
-        result.innerHTML = '<div>퀴즈 !!<a href="./real2.html"><button>다음 페이지로!!</button></a></div>';
+        result.innerHTML = '<div>퀴즈 종류를 좋아하시는군요!! UNSA X 벤엔제리스, 나는 자연인이다로 가시오!      <a href="./real2.html"><button>    다음 페이지로!!</button></a></div>';
       } else if (score >= 21 && score<= 25){
-        result.innerHTML = '<div>사격,야구 게임 !!<a href="./real2.html"><button>다음 페이지로!!</button></a></div>';
+        result.innerHTML = '<div>사격,야구 게임 종류를 좋아하시는군요!! 세종대 야구왕, 전정오락식으로 가시오!     <a href="./real2.html"><button>  다음 페이지로!!</button></a></div>';
       }
       else{
-        result.innerHTML = '<div>아쉽습니다...<a href="./real2.html"><button>다음 페이지로!!</button></a></div>';
+        result.innerHTML = '<div>혼자서 집현전 고전특강 어떠세요.....      <a href="./real2.html"><button>  다음 페이지로!!</button></a></div>';
         
       }
       result.style.display = 'block';

@@ -5,8 +5,8 @@
 </head>
 <body>
 
-<h1>부스와 사랑을 찾아드립니다!</h1>
-<img src="../chehum.png" alt="">
+<center><header>부스와 사랑을 찾아드립니다!</header></center>
+<center><img src="../image/chehum.png" alt="" width="30%" height="30%"></center>
 <div class = "background">
   <div class="question">
     <h2>6. 나는 사진 찍는 것을 즐긴다.</h2>
@@ -59,7 +59,7 @@
 
   
 
-<button onclick="calculate()">결과 보기</button>
+<center><button onclick="calculate()">결과 보기</button></center>
 
 <div id="result" class="result"></div>
 
@@ -78,14 +78,14 @@
      
       var result = document.getElementById('result');
       if (score >= 11 && score <= 15) {
-        result.innerHTML = '<div>놀이기구 !!<a href="./real3.html"><button>다음 페이지로!!</button></a></div>';
+        result.innerHTML = '<div>놀이기구 종류를 좋아하시는군요!! 어른이 대공원, 나는 자연인이다로 가시오!<a href="./real3.html"><button>다음 페이지로!!</button></a></div>';
       } else if (score >= 16  && score <= 20) {
-        result.innerHTML = '<div>타투, 페이스페인팅 !!<a href="./real3.html"><button>다음 페이지로!!</button></a></div>';
+        result.innerHTML = '<div>타투, 페이스페인팅 종류를 좋아하시는군요!! 사뿐pic, 한손은 거들 뿐, 생명과학대학 전통놀이로 가시오!<a href="./real3.html"><button>다음 페이지로!!</button></a></div>';
       } else if (score >= 21 && score<= 25){
-        result.innerHTML = '<div>굿즈, 플리마켓 !!<a href="./real3.html"><button>다음 페이지로!!</button></a></div>';
+        result.innerHTML = '<div>굿즈, 플리마켓 종류를 좋아하시는군요!! 플리마켓, 경경 보드카페로 가시오!<a href="./real3.html"><button>다음 페이지로!!</button></a></div>';
       }
       else{
-        result.innerHTML = '<div>아쉽습니다...<a href="./real3.html"><button>다음 페이지로!!</button></a></div>';
+        result.innerHTML = '<div>아쉽습니다... THE EYES 제로웨이스트로 가시는건 어떠세요??<a href="./real3.html"><button>다음 페이지로!!</button></a></div>';
         
       }
       result.style.display = 'block';
