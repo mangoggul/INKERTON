@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../real_No_retreat_css/else.css">
+</head>
+<body>
+
+<header>부스와 사랑을 찾아드립니다!</header>
+<img src="../eat.png" alt="">
+<div class = "background">
+  <div class="question">
+    <h2>16. 나는 밥을 먹지 않고 축제에 참여할 것이다.</h2>
+    <input type="radio" name="question16" value="5"> 매우 그렇다<br>
+    <input type="radio" name="question16" value="4"> 그렇다<br>
+    <input type="radio" name="question16" value="3"> 보통이다<br>
+    <input type="radio" name="question16" value="2"> 아니다<br>
+    <input type="radio" name="question16" value="1"> 매우 아니다<br>
+  </div>
+  
+  <div class="question">
+    <h2>8. 나는 디저트를 좋아한다.</h2>
+    <input type="radio" name="question17" value="5"> 매우 그렇다<br>
+    <input type="radio" name="question17" value="4"> 그렇다<br>
+    <input type="radio" name="question17" value="3"> 보통이다<br>
+    <input type="radio" name="question17" value="2"> 아니다<br>
+    <input type="radio" name="question17" value="1"> 매우 아니다<br>
+  </div>
+
+  <div class="question">
+    <h2>10. 나는 먹으러 축제에 간다.</h2>
+    <input type="radio" name="question18" value="5"> 매우 그렇다<br>
+    <input type="radio" name="question18" value="4"> 그렇다<br>
+    <input type="radio" name="question18" value="3"> 보통이다<br>
+    <input type="radio" name="question18" value="2"> 아니다<br>
+    <input type="radio" name="question18" value="1"> 매우 아니다<br>
+  </div>
+  
+  <div class="question">
+    <h2>13. 나는 더운 여름에는 시원한 음료수를 마셔야 한다.</h2>
+    <input type="radio" name="question19" value="5"> 매우 그렇다<br>
+    <input type="radio" name="question19" value="4"> 그렇다<br>
+    <input type="radio" name="question19" value="3"> 보통이다<br>
+    <input type="radio" name="question19" value="2"> 아니다<br>
+    <input type="radio" name="question19" value="1"> 매우 아니다<br>
+  </div>
+  
+  
+  <div class="question">
+    <h2>20. 나는 술을 즐겨 마신다.</h2>
+    <input type="radio" name="question20" value="5"> 매우 그렇다<br>
+    <input type="radio" name="question20" value="4"> 그렇다<br>
+    <input type="radio" name="question20" value="3"> 보통이다<br>
+    <input type="radio" name="question20" value="2"> 아니다<br>
+    <input type="radio" name="question20" value="1"> 매우 아니다<br>
+  </div>
+</div>
+
+<button onclick="calculate()">이걸 눌러봐~~</button>
+
+<div id="result" class="result"></div>
+
+<script>
+    function calculate() {
+      var score = 0;
+      var questions = document.getElementsByClassName('question');
+      for (var i = 0; i < questions.length; i++) {
+        var radios = questions[i].getElementsByTagName('input');
+        for (var j = 0; j < radios.length; j++) {
+          if (radios[j].checked) {
+            score += parseInt(radios[j].value);
+          }
+        }
+      }
+  
+      var result = document.getElementById('result');
+      if (score >= 5 && score <= 15) {
+        result.innerHTML = '<div>슬러시 !!<a href="./real2.html"><button>다음 페이지로!!</button></a></div>';
+      } else if (score >= 16  && score <= 20) {
+        result.innerHTML = '<div>아이스크림 !!<a href="./real2.html"><button>다음 페이지로!!</button></a></div>';
+      } else if (score >= 21 && score<= 25){
+        result.innerHTML = '<div>푸드트럭, 주점 !!<a href="./real2.html"><button>다음 페이지로!!</button></a></div>';
+      }
+      else{
+        result.innerHTML = '<div>아쉽습니다...<a href="./real2.html"><button>다음 페이지로!!</button></a></div>';
+        
+      }
+      result.innerHTML = '<img src="../last.png" alt="">'
+      result.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

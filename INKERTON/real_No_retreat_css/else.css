@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'TTTtangsbudaejjigaeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+.img2{
+    text-align: center;
+    margin: 0 auto;
+}
+body {
+    background-color: #fae3d1;
+    color: #081c0c;
+    font-family: 'TTTtangsbudaejjigaeB';
+}
+header{
+    background-color: white;
+}
+
+.question {
+    margin: 20px;
+    text-align: left;
+    padding: 10px;
+}
+
+.result {
+    display: none;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+h1{
+    background-color: rgb(238, 68, 68);
+}
+.background {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}

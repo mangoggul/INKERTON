@@ -1,0 +1,40 @@
+h1{
+    font-size: 60px;
+    text-align: center;
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+.btn{
+    text-decoration: none;
+    text-decoration-line: none !important;
+    text-align: center;
+    font-size: 40px;
+    color:black !important;
+}
+.btn :hover{
+    color: rgb(238, 68, 68);
+    transition: all 0.3s;
+}
+@font-face {
+    font-family: 'TTTtangsbudaejjigaeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+a:-webkit-any-link{
+    color: black
+}
+body{
+    font-family: 'TTTtangsbudaejjigaeB';
+}
+.container{
+    
+}
+.img-fluid{
+    text-align: center;
+}
+.main_img{
+    text-align: center;
+}
